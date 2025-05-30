@@ -1,0 +1,33 @@
+.tab {
+  /* padding: 0.5rem 1rem; */
+  /* border-radius: 0.25rem; */
+  background-color: #fff;
+  color: #444;
+  /* box-shadow: 0 1px 3px rgba(0,0,0,0.1); */
+}
+.tab.active {
+  background-color: #ffffff;
+  color: #b45309;
+}
+.hide-button {
+  margin-right: 0.5rem;
+}
+.report-button {
+    margin-right: 0.2rem;
+}
+.title-text {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #686665;
+  margin-left: -1rem;
+}
+.shortlist-btn {
+    margin-left: 0.2    rem;
+}
+
+body {
+  font-family: 'Chivo', sans-serif;
+}
+.mo-no {
+    font-weight: 500;
+}

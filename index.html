@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>EmptyCup</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Chivo:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body class="font-sans leading-normal bg-white">
+  <div class="container mx-auto px-4">
+    <header class="flex items-center justify-between py-4 bg-white">
+      <!-- Left: Logo -->
+      <div class="flex items-center">
+        <img src="assets/logo-small 1.png" alt="logo" class="w-8 h-8">
+      </div>
+      <!-- Center: Title -->
+      <div class="flex-grow text-center">
+        <h1 class="font-bold text-gray-500 title-text">EmptyCup</h1>
+      </div>
+      <!-- Right: Menu Icon -->
+      <div class="font-bold text-gray-700 cursor-pointer text-xl">⋮</div>
+    </header>
+    <hr class="border-gray-200">
+    <!-- Tabs -->
+    <div class="flex justify-between bg-white py-2 text-xs">
+      <!-- Left-aligned tabs -->
+      <div class="flex">
+        <button class="tab active flex flex-col items-center text-yellow-700 border-b-2 border-yellow-700 py-2 px-4">
+          <img src="assets/contacts.png" alt="Contacts" class="w-8 h-10 mb-1">
+        </button>
+        <button class="tab flex flex-col items-center py-2 px-4">
+          <img src="assets/gallery.png" alt="Gallery" class="w-7 h-11 mb-1">
+        </button>
+        <button class="tab flex flex-col items-center py-2 px-4">
+          <img src="assets/map.png" alt="Map" class="w-4 h-10 mb-1">
+        </button>
+      </div>
+      <!-- Right-aligned tabs -->
+      <div class="flex">
+        <button class="tab flex flex-col items-center py-2 px-4">
+          <img src="assets/shortlisted.png" alt="Shortlisted" class="w-5 h-5 mb-1">Shortlisted
+        </button>
+        <button class="tab flex flex-col items-center py-2 px-4">
+          <img src="assets/sort.png" alt="Sort" class="w-8 h-10 mb-1">
+        </button>
+      </div>
+    </div>
+    
+    <!-- Listings -->
+    <div id="listings" class="mt-6 space-y-4">
+    </div>
+  </div>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
