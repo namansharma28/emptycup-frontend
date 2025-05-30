@@ -1,7 +1,8 @@
 const shortlistedListingIds = new Set();
+const API_BASE_URL = 'https://emptycup-gwwi.onrender.com'; // Replace with your actual Render backend URL
 
 document.addEventListener("DOMContentLoaded", () => {
-  fetch("http://127.0.0.1:5000/api/listings")
+  fetch(`${API_BASE_URL}/api/listings`)
     .then(res => res.json())
     .then(data => {
       const container = document.getElementById("listings");
